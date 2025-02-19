@@ -1,4 +1,2 @@
 # _redirects
-/image  /lego.png  302  Referer=https://legoforum.forumcommunity.net/*
-/image  /thesims.png  302  Referer=https://thesimsita.forumcommunity.net/*
-/image  /lego2.png  302
+/image  /.netlify/functions/image-redirect  302
