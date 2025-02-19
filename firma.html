@@ -7,16 +7,16 @@
 </head>
 <body>
     <h1>Benvenuto sulla nostra pagina!</h1>
-    <img id="immagine" src="default.jpg" alt="Immagine Dinamica" style="width: 100%; max-width: 500px;">
+    <img id="immagine" src="lego.png" alt="Immagine Dinamica" style="width: 100%; max-width: 500px;">
 
     <script>
         // Verifica il referral e cambia l'immagine
         if (document.referrer.includes("esempio.com")) {
-            document.getElementById("immagine").src = "immagine1.jpg"; // Immagine per esempio.com
+            document.getElementById("immagine").src = "lego.png"; // Immagine per esempio.com
         } else if (document.referrer.includes("altro.com")) {
-            document.getElementById("immagine").src = "immagine2.jpg"; // Immagine per altro.com
+            document.getElementById("immagine").src = "thesims.png"; // Immagine per altro.com
         } else {
-            document.getElementById("immagine").src = "default.jpg"; // Immagine di default
+            document.getElementById("immagine").src = "lego.png"; // Immagine di default
         }
     </script>
 </body>
