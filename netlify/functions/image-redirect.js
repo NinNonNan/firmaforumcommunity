@@ -6,7 +6,7 @@ exports.handler = async (event) => {
     if (referer.includes("legoforum.forumcommunity.net")) {
         imageUrl = "/lego.png";
     } else if (referer.includes("thesimsita.forumcommunity.net")) {
-        imageUrl = "/thesims.png";
+        imageUrl = "/thesimsBANNER.png";
     }
 
     return {
