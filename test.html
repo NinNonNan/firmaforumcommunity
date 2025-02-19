@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Referrer</title>
+</head>
+<body>
+    <h2>Referrer Test</h2>
+    <p>Il tuo referrer è: <span id="referrer"></span></p>
+    <script>
+        document.getElementById("referrer").textContent = document.referrer || "Nessun referrer ricevuto";
+    </script>
+</body>
+</html>
