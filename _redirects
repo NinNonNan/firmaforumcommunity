@@ -1,2 +1,2 @@
 # _redirects
-/image  /.netlify/functions/image-redirect  302
+/image  /image-redirect  302
