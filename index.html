@@ -2,22 +2,28 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immagine Dinamica in base al Referral</title>
+    <meta http-equiv="refresh" content="0; url=" id="redirect">
+    <title>Redirect Image</title>
 </head>
 <body>
-    <h1>Benvenuto sulla nostra pagina!</h1>
-    <img id="immagine" src="lego.png" alt="Immagine Dinamica" style="width: 100%; max-width: 500px;">
-
+    <!-- Qui puoi mettere una logica JavaScript per cambiare l'immagine in base al referral -->
     <script>
-        // Verifica il referral e cambia l'immagine
-        if (document.referrer.includes("https://legoforum.forumcommunity.net/")) {
-            document.getElementById("immagine").src = "lego.png"; // Immagine per esempio.com
-        } else if (document.referrer.includes("https://thesimsita.forumcommunity.net/")) {
-            document.getElementById("immagine").src = "thesims.png"; // Immagine per altro.com
+        // Recupera il valore del referrer
+        const referrer = document.referrer;
+
+        // Cambia l'immagine in base al referrer
+        let imageUrl = '';
+
+        if (referrer.includes('https://legoforum.forumcommunity.net/')) {
+            imageUrl = 'lego.png'; // Cambia con il nome della tua immagine
+        } else if (referrer.includes('https://thesimsita.forumcommunity.net/')) {
+            imageUrl = 'thesims.png'; // Cambia con un'altra immagine
         } else {
-            document.getElementById("immagine").src = "lego.png"; // Immagine di default
+            imageUrl = 'lego.png'; // Immagine di default
         }
+
+        // Redirige alla nuova immagine
+        window.location.replace(imageUrl);
     </script>
 </body>
 </html>
