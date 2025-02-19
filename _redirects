@@ -1,4 +1,4 @@
 # _redirects
-/image1  /lego.png  301  Referer=https://legoforum.forumcommunity.net/*
-/image2  /thesims.png  301  Referer=https://thesimsita.forumcommunity.net/*
-*  /lego2.png  302
+/image  /lego.png  302  Referer=https://legoforum.forumcommunity.net/*
+/image  /thesims.png  302  Referer=https://thesimsita.forumcommunity.net/*
+/image  /lego2.png  302
