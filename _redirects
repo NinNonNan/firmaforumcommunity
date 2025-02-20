@@ -2,3 +2,4 @@
 /image  /.netlify/functions/image-redirect  302
 /signature  /.netlify/functions/signature  302
 /redirect  /.netlify/functions/redirect  302
+/banner1  /.netlify/functions/banner1  302
