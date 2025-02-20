@@ -2,16 +2,16 @@ exports.handler = async (event) => {
     const referer = event.headers.referer || "";
 
     // Default: solo immagine, senza link
-    let imageUrl = "lego2.png";
+    let imageUrl = "/lego2.png";
     let linkUrl = "";
     let showLink = false;
 
     if (referer.includes("legoforum.forumcommunity.net")) {
-        imageUrl = "lego.png";
+        imageUrl = "/lego.png";
         linkUrl = "https://legoforum.forumcommunity.net/tuo-post";
         showLink = true;
     } else if (referer.includes("thesimsita.forumcommunity.net")) {
-        imageUrl = "thesims.png";
+        imageUrl = "/thesims.png";
         linkUrl = "https://thesimsita.forumcommunity.net/?t=63240797#lastpost";
         showLink = true;
     }
