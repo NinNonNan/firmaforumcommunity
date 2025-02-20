@@ -1,2 +1,3 @@
 # _redirects
 /image  /.netlify/functions/image-redirect  302
+/signature  /.netlify/functions/signature  302
