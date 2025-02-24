@@ -7,23 +7,5 @@
 </head>
 <body>
     <!-- Qui puoi mettere una logica JavaScript per cambiare l'immagine in base al referral -->
-    <script>
-        // Recupera il valore del referrer
-        const referrer = document.referrer;
-
-        // Cambia l'immagine in base al referrer
-        let imageUrl = '';
-
-        if (referrer.includes('https://legoforum.forumcommunity.net/')) {
-            imageUrl = 'lego.png'; // Cambia con il nome della tua immagine
-        } else if (referrer.includes('https://thesimsita.forumcommunity.net/')) {
-            imageUrl = 'thesims.png'; // Cambia con un'altra immagine
-        } else {
-            imageUrl = 'lego.png'; // Immagine di default
-        }
-
-        // Redirige alla nuova immagine
-        window.location.replace(imageUrl);
-    </script>
 </body>
 </html>
